@@ -1,3 +1,4 @@
+## use the right common functionalties which the entire project can use
 import os
 import sys
 
@@ -16,7 +17,7 @@ def save_object(file_path, obj):
         os.makedirs(dir_path, exist_ok=True)
 
         with open(file_path, "wb") as file_obj:
-            dill.dump(obj, file_obj)
+            dill.dump(obj, file_obj)        #its is a libraray that will help use to create a pickle file
 
     except Exception as e:
         raise CustomException(e, sys)

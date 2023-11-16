@@ -1,3 +1,4 @@
+## use to train model and see all the accuracy and the r2score result
 import os
 import sys
 from dataclasses import dataclass
